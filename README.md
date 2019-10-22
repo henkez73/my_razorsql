@@ -1,7 +1,5 @@
 # My_RazorSQL (unlicensed version)
 
-henkez/my_razorsql)
-
 RazorSQL is copyrighted and title to Software and all associated intellectual property rights are retained by Richardson Software, LLC.
 
 To run RazorSQL use the runme.sh script which sets up all the required bits and copies the profiles and preferences into the container (working on Ubuntu 18.04).
