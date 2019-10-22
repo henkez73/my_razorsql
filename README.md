@@ -1,6 +1,6 @@
 # My_RazorSQL (unlicensed version)
 
-[![Build Status](http://triton.local:3001/api/badges/henkez/my_razorsql/status.svg)](http://triton.local:3001/henkez/my_razorsql)
+henkez/my_razorsql)
 
 RazorSQL is copyrighted and title to Software and all associated intellectual property rights are retained by Richardson Software, LLC.
 
