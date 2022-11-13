@@ -1,6 +1,6 @@
 # My_RazorSQL (unlicensed version)
 
-![workflow](https://github.com/henkez/my_razorsql/actions/workflows/publish-docker-image.yaml/badge.svg)
+![workflow](https://github.com/henkez73/my_razorsql/actions/workflows/publish-docker-image.yaml/badge.svg)
 
 RazorSQL is copyrighted and title to Software and all associated intellectual property rights are retained by Richardson Software, LLC.
 
