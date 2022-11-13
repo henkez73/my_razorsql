@@ -1,7 +1,0 @@
-object_detection:
-  image: henkez/my_razorsql:latest
-  container_name: my_razorsql
-  environment:
-    - DISPLAY
-  volumes:
-    - /tmp/.X11-unix:/tmp/.X11-unix

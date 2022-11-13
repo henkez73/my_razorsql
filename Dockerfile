@@ -1,10 +1,13 @@
-FROM openjdk:7-jre
+FROM ibmjava:8-jre
 LABEL maintainer="henk.wobbes(at)gmail.com"
+ARG version=10_1_1
+
+RUN apt-get update && apt-get install -y unzip libxi6 libxrender1 libxtst6 libxft2
 
 WORKDIR /opt
-RUN wget https://s3.amazonaws.com/downloads.razorsql.com/downloads/8_5_1/razorsql8_5_1_linux_x64.zip \
-    && unzip razorsql8_5_1_linux_x64.zip \
-    && rm -rf razorsql8_5_1_linux_x64.zip \
+RUN wget "https://s3.amazonaws.com/downloads.razorsql.com/downloads/"$version"/razorsql"$version"_linux_x64.zip" \
+    && unzip "razorsql"$version"_linux_x64.zip" \
+    && rm -rf "razorsql"$version"_linux_x64.zip" \
     && chmod 755 /opt/razorsql/razorsql.sh \
     && mkdir -p /home/developer \
     && echo "developer:x:1000:1000:Developer,,,:/home/developer:/bin/bash" >> /etc/passwd \

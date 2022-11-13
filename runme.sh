@@ -1,14 +1,14 @@
 #!/bin/bash
 
-docker pull henkez/my_razorsql:latest
+xhost +"local:docker@"
 
 sleep 1
 
 docker run --rm \
     --name my_razorsql \
-    -e DISPLAY \
+    -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
-    henkez/my_razorsql &
+    henkez/my_razorsql:latest &
 
 sleep 5
 
