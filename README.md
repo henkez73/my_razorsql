@@ -13,4 +13,5 @@ To run RazorSQL use the runme.sh script which sets up all the required bits and 
 2. Copy or move the profiles.txt file into the data folder so that when you start the container with the runme.sh script it copies the local data/profiles.txt back into the running container.
 
 ## Repo Visualization
-![Visualization of this repo](images/diagram.svg)
+
+![Visualization of this repo](./images/diagram.svg)
