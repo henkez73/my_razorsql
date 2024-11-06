@@ -1,14 +1,11 @@
 #!/bin/bash
 
-xhost +"local:docker@"
-
-sleep 1
-
+docker build --platform linux/amd64 -t razorsql .
 docker run --rm \
     --name my_razorsql \
     -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
-    henkez/my_razorsql:latest &
+    razorsql &
 
 sleep 5
 
