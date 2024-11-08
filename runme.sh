@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
 docker build --platform linux/amd64 -t razorsql .
 docker run --rm \
     --name my_razorsql \
-    -e DISPLAY=$DISPLAY \
-    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -p 5800:5800 \
+    -p 5900:5900 \
     razorsql &
 
 sleep 5
