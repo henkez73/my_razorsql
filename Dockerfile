@@ -1,6 +1,6 @@
 FROM ibmjava:8-jre
 LABEL maintainer="henk.wobbes(at)gmail.com"
-ARG version=10_6_3
+ARG version=10_6_6
 
 RUN apt-get update && apt-get install -y unzip libxi6 libxrender1 libxtst6 libxft2
 
@@ -14,6 +14,6 @@ RUN wget "https://s3.dualstack.us-east-1.amazonaws.com/downloads.razorsql.com/do
     && echo "developer:x:1000:" >> /etc/group \
     && chown developer:developer -R /home/developer
 USER developer
-ENV HOME /home/developer
+ENV HOME=/home/developer
 WORKDIR /home/developer
-CMD /opt/razorsql/razorsql.sh
+CMD ["/opt/razorsql/razorsql.sh"]
